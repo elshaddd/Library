@@ -13,5 +13,5 @@ struct book {
     char* author;
     char* name;
     int cost;
-    int kolvo;
+    int amount;
 };

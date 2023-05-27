@@ -6,9 +6,9 @@ void tablica(struct book **lib, const int *lib_am);
 
 void Menu();
 
-void podmenu();
+void data_handling_menu();
 
-void red_podmenu();
+void edit_menu();
 
 
-void red_podmenu();
+void edit_menu();

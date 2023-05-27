@@ -15,7 +15,7 @@ void tablica(struct book **lib, const int *lib_am) {
         wprintf(L"|% 20s", lib[i]->author);
         wprintf(L"|%20s", lib[i]->name);
         wprintf(L"|% 10d", lib[i]->cost);
-        wprintf(L"|% 11d|\n", lib[i]->kolvo);
+        wprintf(L"|% 11d|\n", lib[i]->amount);
     }
     printf("---------------------------------------------------------------------\n");
 
@@ -32,7 +32,7 @@ void Menu() {
     wprintf(L"%-17s\n", "6-Выход из программы ");
 }
 
-void podmenu() {
+void data_handling_menu() {
     wprintf(L"% 17s\n", "Выберете действие:");
     wprintf(L"% 10s", "1-Редактировать ");
     wprintf(L"% 10s", "2-Добавить ");
@@ -45,7 +45,7 @@ void podmenu() {
 }
 
 
-void red_podmenu() {
+void edit_menu() {
     wprintf(L"% 17s\n", "Выберете действие:");
     wprintf(L"% 10s", "1-Изменение автора ");
     wprintf(L"% 10s", "2-Изменение книги ");
